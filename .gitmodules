@@ -1,3 +1,6 @@
 [submodule "packages/ru_ru_language_pack"]
 	path = packages/ru_ru_language_pack
 	url = http://gitlab8.lab321.ru/suitecrm/ru_ru_language_pack.git
+[submodule "packages/locale_ru"]
+	path = packages/locale_ru
+	url = http://gitlab8.lab321.ru/suitecrm/locale_ru.git

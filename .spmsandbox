@@ -18,3 +18,8 @@
     path = packages/ru_ru_language_pack
     id = ru_ru
     version = 7.6.1
+
+[locale_ru]
+    path = packages/locale_ru
+    id = locale_ru
+    version = 1.0.1
