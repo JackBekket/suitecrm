@@ -4,3 +4,6 @@
 [submodule "packages/locale_ru"]
 	path = packages/locale_ru
 	url = http://gitlab8.lab321.ru/suitecrm/locale_ru.git
+[submodule "packages/scores"]
+	path = packages/scores
+	url = http://gitlab.lab321.ru/sugarcrm/scores.git

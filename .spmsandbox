@@ -23,3 +23,9 @@
     path = packages/locale_ru
     id = locale_ru
     version = 1.0.1
+
+[scores]
+    path = packages/scores
+    id = scores
+    version = 0.0.22
+
