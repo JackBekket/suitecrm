@@ -7,3 +7,6 @@
 [submodule "packages/scores"]
 	path = packages/scores
 	url = http://gitlab.lab321.ru/sugarcrm/scores.git
+[submodule "packages/outside"]
+	path = packages/outside
+	url = http://gitlab8.lab321.ru/suitecrm/outside.git

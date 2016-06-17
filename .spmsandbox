@@ -24,8 +24,13 @@
     id = locale_ru
     version = 1.0.1
 
-[scores]
+[Scores]
     path = packages/scores
-    id = scores
+    id = Scores
     version = 0.0.22
+
+[outside]
+    path = packages/outside
+    id = outside
+    version = 1.0.0
 
