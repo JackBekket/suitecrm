@@ -74,6 +74,21 @@ if (is_file('config.php')) {
 if (is_file('config_override.php')) {
     require_once 'config_override.php';
 }
+
+/* START SUBDOMAIN CONFIG HS321 */
+require_once 'modules/Domains/DomainReader.php';
+$domainLevel = !empty($sugar_config['domain_level']) ? $sugar_config['domain_level'] : 3;
+try {
+    $domain = DomainReader::getDomain($domainLevel);
+    DomainReader::requireDomainConfig($domain);
+}
+catch(Exception $e) {
+    header("HTTP/1.0 404 Not Found");
+    echo $e->getMessage();
+    exit(1);
+}
+/* END SUBDOMAIN CONFIG HS321 */
+
 if (empty($GLOBALS['installing']) && empty($sugar_config['dbconfig']['db_name'])) {
     header('Location: install.php');
     exit();

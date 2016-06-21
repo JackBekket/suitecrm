@@ -34,3 +34,7 @@
     id = outside
     version = 1.0.1
 
+[domains]
+    path = packages/domains
+    id = domains
+    version = 1.0.0

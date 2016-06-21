@@ -198,6 +198,21 @@ class Configurator {
 		return $sugar_config;
 	}
 	function saveOverride($override) {
+	    /* START SUBDOMAIN CONFIG HS321 */
+	    require_once 'modules/Domains/DomainReader.php';
+	    $domainLevel = !empty($GLOBALS['sugar_config']['domain_level']) ? $GLOBALS['sugar_config']['domain_level'] : 3;
+	    $idAdminDomain = false;
+	    try {
+		$domain = DomainReader::getDomain($domainLevel);
+		$idAdminDomain = $domain === DomainReader::$ADMIN_DOMAIN;
+	    }
+	    catch(Exception $e) {
+	    }
+	    if(!$idAdminDomain) {
+		SugarApplication::appendErrorMessage("You can't save config_override in non admin domain");
+		return;
+	    }
+	    /* END SUBDOMAIN CONFIG HS321 */
         require_once('install/install_utils.php');
 	    if ( !file_exists('config_override.php') ) {
 	    	touch('config_override.php');
