@@ -10,3 +10,6 @@
 [submodule "packages/outside"]
 	path = packages/outside
 	url = http://gitlab8.lab321.ru/suitecrm/outside.git
+[submodule "packages/accounts_rf_props_field"]
+	path = packages/accounts_rf_props_field
+	url = http://gitlab.lab321.ru/sugarcrm/accounts_rf_props_field.git
