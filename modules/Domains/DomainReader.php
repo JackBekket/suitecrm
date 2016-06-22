@@ -21,11 +21,12 @@ class DomainReader
     public static function getDomain($domainLevel)
     {
         if(PHP_SAPI === 'cli') {
-            return self::$ADMIN_DOMAIN;
+            $domain = getenv('SUGAR_DOMAIN');
+            return !empty($domain) ? $domain : self::$ADMIN_DOMAIN;
         }
         $domainParts = explode('.', $_SERVER['HTTP_HOST']);
-        if(count($domainParts) == $domainLevel) {
-            $domain = reset($domainParts);
+        if(count($domainParts) >= $domainLevel) {
+            $domain = $domainParts[count($domainParts) - $domainLevel];
             if(!self::validateDomainName($domain)) {
                 throw new Exception('Invalid domain name');
             }
