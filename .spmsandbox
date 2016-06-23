@@ -43,3 +43,13 @@
     path = packages/accounts_rf_props_field
     id = Accounts_rf_props_field
     version = 1.0.0
+
+[DB_doms]
+    path = packages/db_doms
+    id = DB_doms
+    version = 0.0.0.init.2
+
+[Insert_org_form_dom]
+    path = packages/insert_org_form_dom
+    id = Insert_org_form_dom
+    version = 0.0.3

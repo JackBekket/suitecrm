@@ -16,3 +16,9 @@
 [submodule "packages/domains"]
 	path = packages/domains
 	url = http://gitlab8.lab321.ru/lider/domains.git
+[submodule "packages/db_doms"]
+	path = packages/db_doms
+	url = http://gitlab.lab321.ru/sugarcrm/db_doms.git
+[submodule "packages/insert_org_form_dom"]
+	path = packages/insert_org_form_dom
+	url = http://gitlab.lab321.ru/sugarcrm/insert_org_form_dom.git
