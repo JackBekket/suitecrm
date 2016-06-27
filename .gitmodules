@@ -22,3 +22,6 @@
 [submodule "packages/insert_org_form_dom"]
 	path = packages/insert_org_form_dom
 	url = http://gitlab.lab321.ru/sugarcrm/insert_org_form_dom.git
+[submodule "packages/securityforms"]
+	path = packages/securityforms
+	url = http://gitlab.lab321.ru/sugarcrm/securityforms.git

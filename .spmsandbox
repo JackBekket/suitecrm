@@ -53,3 +53,8 @@
     path = packages/insert_org_form_dom
     id = Insert_org_form_dom
     version = 0.0.3
+
+[SecurityForms]
+    path = packages/securityforms
+    id = SecurityForms
+    version = 0.0.9
