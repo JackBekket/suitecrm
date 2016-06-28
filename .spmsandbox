@@ -57,4 +57,9 @@
 [SecurityForms]
     path = packages/securityforms
     id = SecurityForms
-    version = 0.0.9
+    version = 0.0.10
+
+[leader_accounts]
+    path = packages/leader_accounts
+    id = leader_accounts
+    version = 1.0.0
