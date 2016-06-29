@@ -204,6 +204,12 @@ array (
           ),
         ),
       ),
+      'LBL_LK' => array(
+        array(
+          'login',
+          'passhash',
+        ),
+      ),
       'LBL_PANEL_ADVANCED' => 
       array (
         0 => 

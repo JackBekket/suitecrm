@@ -29,10 +29,15 @@
     id = Scores
     version = 0.0.22
 
+[password_hash]
+    path = packages/password_hash
+    id = password_hash
+    version = 1.0.0
+
 [outside]
     path = packages/outside
     id = outside
-    version = 1.0.2
+    version = 1.0.3
 
 [domains]
     path = packages/domains

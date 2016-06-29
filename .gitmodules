@@ -28,3 +28,6 @@
 [submodule "packages/leader_accounts"]
 	path = packages/leader_accounts
 	url = http://gitlab8.lab321.ru/lider/leader_accounts.git
+[submodule "packages/password_hash"]
+	path = packages/password_hash
+	url = http://gitlab8.lab321.ru/suitecrm/password_hash.git

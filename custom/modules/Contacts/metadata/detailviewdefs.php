@@ -157,6 +157,11 @@ array (
           'newTab' => true,
           'panelDefault' => 'expanded',
         ),
+        'LBL_LK' =>
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
         'LBL_PANEL_ADVANCED' => 
         array (
           'newTab' => true,
@@ -277,6 +282,12 @@ array (
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
+        ),
+      ),
+      'LBL_LK' => array(
+        array(
+          'login',
+          '',
         ),
       ),
       'LBL_PANEL_ADVANCED' => 

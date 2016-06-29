@@ -1,6 +1,7 @@
 <?php
 $mod_strings['LBL_LOGIN'] = 'Login';
-$mod_strings['LBL_PASSHASH'] = 'Hash of password';
+$mod_strings['LBL_PASSHASH'] = 'Password';
+$mod_strings['LBL_LK'] = 'Personal cabinet';
 
 ?>
 
