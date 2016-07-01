@@ -68,3 +68,8 @@
     path = packages/leader_accounts
     id = leader_accounts
     version = 1.0.0
+
+[webservice_lk]
+    path = packages/webservice_lk
+    id = webservice_lk
+    version = 1.0.0

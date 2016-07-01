@@ -31,3 +31,6 @@
 [submodule "packages/password_hash"]
 	path = packages/password_hash
 	url = http://gitlab8.lab321.ru/suitecrm/password_hash.git
+[submodule "packages/webservice_lk"]
+	path = packages/webservice_lk
+	url = http://gitlab8.lab321.ru/suitecrm/webservice_lk.git
