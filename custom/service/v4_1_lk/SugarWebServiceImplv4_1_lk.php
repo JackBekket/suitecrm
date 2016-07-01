@@ -40,8 +40,8 @@ class SugarWebServiceImplv4_1_lk extends SugarWebServiceImplv4_1
                     }
                 }
             }
-            else {
-                $GLOBALS['log']->error('SugarWebServiceImplv4_1_lk: password is empty and web_service_allowed_ips is empty, request ip '
+            if(!$isLoginSuccess) {
+                $GLOBALS['log']->error('SugarWebServiceImplv4_1_lk: password is empty and web_service_allowed_ips not allowed ip '
                     .(!empty($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '<none>'));
             }
         }

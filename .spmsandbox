@@ -72,4 +72,4 @@
 [webservice_lk]
     path = packages/webservice_lk
     id = webservice_lk
-    version = 1.0.0
+    version = 1.0.1
