@@ -37,3 +37,9 @@
 [submodule "packages/webservice_lk"]
 	path = packages/webservice_lk
 	url = http://gitlab8.lab321.ru/suitecrm/webservice_lk.git
+[submodule "packages/leader_roles"]
+	path = packages/leader_roles
+	url = http://gitlab8.lab321.ru/lider/leader_roles.git
+[submodule "packages/leader_users"]
+	path = packages/leader_users
+	url = http://gitlab8.lab321.ru/lider/leader_users.git

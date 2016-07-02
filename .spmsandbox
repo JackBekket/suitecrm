@@ -47,7 +47,7 @@
 [domains]
     path = packages/domains
     id = domains
-    version = 1.0.5
+    version = 1.0.6
 
 [Accounts_rf_props_field]
     path = packages/accounts_rf_props_field
@@ -78,3 +78,13 @@
     path = packages/webservice_lk
     id = webservice_lk
     version = 1.0.1
+
+[leader_roles]
+    path = packages/leader_roles
+    id = leader_roles
+    version = 1.0.0
+
+[leader_users]
+    path = packages/leader_users
+    id = leader_users
+    version = 1.0.0
