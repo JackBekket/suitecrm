@@ -163,4 +163,63 @@ class SugarWebServiceImplv4_1_lk extends SugarWebServiceImplv4_1
         self::$helperObject->setFaultObject($error);
         $GLOBALS['log']->error('End: SugarWebServiceImpl->login - failed login');
     }
+
+    /**
+     * Возвращает строки переводов $app_strings, $app_list_strings, $mod_strings.
+     *
+     * @param $strings - строка или массив строк для перевода; если пусто,
+     * возвращаются все строки
+     * @param $mod - имя модуля, строки которого нужно перевести
+     * @param $selectedValue - дополнительно отфильтровать по ключу в app_list_strings[$strings]
+     */
+    public function get_language_strings($language, $strings = '', $mod = '', $selectedValue = '')
+    {
+        $mod_strings = !empty($mod) ? return_module_language($language, $mod) : array();
+        $app_strings = return_application_language($language);
+        $app_list_strings = return_app_list_strings_language($language);
+
+        if(!empty($strings)) {
+            $mod_strings1 = array();
+            foreach((array)$strings as $string) {
+                if(isset($mod_strings[$string])) {
+                    $mod_strings1[$string] = $mod_strings[$string];
+                }
+            }
+            $mod_strings = $mod_strings1;
+
+            $app_strings1 = array();
+            foreach((array)$strings as $string) {
+                if(isset($app_strings[$string])) {
+                    $app_strings1[$string] = $app_strings[$string];
+                }
+            }
+            $app_strings = $app_strings1;
+
+            $app_list_strings1 = array();
+            foreach((array)$strings as $string) {
+                if(isset($app_list_strings[$string])) {
+                    $app_list_strings1[$string] = $app_list_strings[$string];
+                }
+            }
+            $app_list_strings = $app_list_strings1;
+
+            if (!empty($selectedValue) || (is_numeric($selectedValue) && $selectedValue == 0)) {
+                $mod_strings = array();
+                $app_strings = array();
+                $app_list_strings1 = array();
+                foreach((array)$strings as $string) {
+                    if(isset($app_list_strings[$string][$selectedValue])) {
+                        $app_list_strings1[$string][$selectedValue] = $app_list_strings[$string][$selectedValue];
+                    }
+                }
+                $app_list_strings = $app_list_strings1;
+            }
+        }
+
+        return array_filter(array(
+            'mod_strings' => $mod_strings,
+            'app_strings' => $app_strings,
+            'app_list_strings' => $app_list_strings,
+        ));
+    }
 }
