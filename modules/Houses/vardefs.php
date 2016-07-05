@@ -1,8 +1,8 @@
 <?php
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
-$dictionary["object"] = array (
-    'table' => 'object',
+$dictionary["House"] = array (
+    'table' => 'houses',
     'audited' => true,
     'fields' => array (
         'type' => array (
