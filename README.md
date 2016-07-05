@@ -18,5 +18,6 @@
 В `nginx`:
 fastcgi_read_timeout 300;
 
-В `config.php`:
-см. `readme` из пакета `domains`
+См. `readme` из пакета `domains`.
+
+См. `readme` из пакета `webservice_lk`.
