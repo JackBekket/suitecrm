@@ -31,3 +31,6 @@
 [submodule "packages/password_hash"]
 	path = packages/password_hash
 	url = http://gitlab8.lab321.ru/suitecrm/password_hash.git
+[submodule "packages/houses"]
+	path = packages/houses
+	url = http://gitlab8.lab321.ru/lider/houses.git
