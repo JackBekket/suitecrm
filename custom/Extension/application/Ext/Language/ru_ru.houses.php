@@ -59,6 +59,13 @@ $app_list_strings['water_heater_types_dom'] = array (
     '2' => 'Электрический',
     '3' => 'Газовый',
   );
+$app_list_strings['gas_supply_types_dom'] = array (
+    '' => '',
+    '1' => 'Отсутствует',
+    '2' => 'нецентральное (сжиженный газ)',
+    '3' => 'центральное (природный газ)',
+    '4' => 'Нет данных',
+  );
 $app_list_strings['cooker_types_dom'] = array (
     '' => '',
     '1' => 'Отсутствует',

@@ -151,6 +151,15 @@ $dictionary["House"] = array (
           'len' => 100,
           'importable' => 'required',
         ),
+        'gas_supply' =>
+        array (
+          'name' => 'gas_supply',
+          'vname' => 'LBL_GAS_SUPPLY',
+          'type' => 'enum',
+          'options' => 'gas_supply_types_dom',
+          'len' => 100,
+          'importable' => 'required',
+        ),
         'cooker_type' =>
         array (
           'name' => 'cooker_type',

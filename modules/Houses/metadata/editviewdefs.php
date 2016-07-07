@@ -29,8 +29,9 @@ $viewdefs['Houses']['EditView'] = array (
         'LBL_PANEL_PREMISES_INFO' => array (
           array ('heating', 'sewarage'),
           array ('cold_water_supply', 'hot_water_supply'),
-          array ('water_heater_type', 'cooker_type'),
-          array ('bath_presence', 'rubbish_chute_presence'),
+          array ('gas_supply', 'water_heater_type'), 
+          array ('cooker_type', 'bath_presence'), 
+          array ('rubbish_chute_presence', null),
         ),
         'LBL_PANEL_AREAS' => array (
           array ('total_area', 'living_premises_area'),

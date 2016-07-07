@@ -10,7 +10,7 @@ class House extends Basic {
     var $importable = true;
     
     function get_summary_text() {
-      return impolde (", ", array_diff([$this->region, $this->city, $this->street, $this->house], []));
+      return implode (", ", array_diff([$this->region, $this->city, $this->street, $this->house], []));
     }
 
     function House () {

@@ -3,28 +3,22 @@
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 $listViewDefs['Houses'] = array (
+    'STREET' => array (
+        'label' => 'LBL_STREET',
+        'default' => true,
+        'link' => true,
+    ),
+    'HOUSE' => array (
+        'label' => 'LBL_HOUSE',
+        'default' => true,
+    ),
+
     'REGION' => array (
         'label' => 'LBL_REGION',
         'default' => true,
     ),
-    'DISTRICT' => array (
-        'label' => 'LBL_DISTRICT',
-        'default' => true,
-    ),
     'CITY' => array (
         'label' => 'LBL_CITY',
-        'default' => true,
-    ),
-    'VILLAGE' => array (
-        'label' => 'LBL_VILLAGE',
-        'default' => true,
-    ),
-    'STREET' => array (
-        'label' => 'LBL_STREET',
-        'default' => true,
-    ),
-    'HOUSE' => array (
-        'label' => 'LBL_HOUSE',
         'default' => true,
     ),
     'TOTAL_PREMISES_AREA' => array (
