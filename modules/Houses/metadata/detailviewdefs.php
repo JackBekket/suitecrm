@@ -21,6 +21,7 @@ $viewdefs['Houses']['DetailView'] = array (
         'LBL_PANEL_ADDRESS' => array (
             array ('region', 'city'),
             array ('street', 'house'),
+            array ('start_service_date', null),
         ),
         'LBL_PANEL_HOUSE_INFO' => array (
           array ('type', 'serialnum'),
@@ -39,6 +40,17 @@ $viewdefs['Houses']['DetailView'] = array (
           array ('total_area', 'living_premises_area'),
           array ('living_premises_area', 'nonliving_premises_area'),
           array ('total_premises_area', 'total_property_area')
+        ),
+        'LBL_ADDITIONAL_INFO' => array (
+          array ('living_house_type', 'wear_house'),
+          array ('fundation_type', 'wear_fundation'),
+          array ('wall_material', 'wear_walls'),
+          array ('overlap_material', 'wear_overlaps'),
+          array ('roof_material', 'inventorynum'),
+          array ('overhaul_date', 'cadastralnum'),
+          array ('lifts_count', 'yard_area'),
+          array ('accounts_count', 'territory_area'),
+          array ('residents_count', 'house_specifications'),
         ),
 		'LBL_PANEL_ASSIGNMENT' => array (
 			array (
