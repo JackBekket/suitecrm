@@ -3,7 +3,7 @@
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 $mod_strings = array (
-        'LBL_TYPE' => 'Типа дома',
+        'LBL_TYPE' => 'Тип дома',
         'LBL_SERVICE_START_DATE' => 'Дата начала обслуживания',
         'LBL_REGION' => 'Регион',
         'LBL_CITY' => 'Город',
@@ -31,12 +31,12 @@ $mod_strings = array (
         'LBL_LIVING_PREMISES_AREA' => 'Площадь жилых помещений',
         'LBL_TOTAL_PREMISES_AREA' => 'Площадь всех помещений',
         'LBL_TOTAL_PROPERTY_AREA' => 'Площадь общего имущества',
-        'LBL_HOUSE_TYPE' => 'Вид жилого дома',
+        'LBL_LIVING_HOUSE_TYPE' => 'Вид жилого дома',
         'LBL_FUNDATION_TYPE' => 'Тип фундамента',
         'LBL_WALL_MATERIAL' => 'Материал стен',
         'LBL_OVERLAP_MATERIAL' => 'Материал перекрытий',
         'LBL_ROOF_MATERIAL' => 'Материал кровли',
-        'LBL_OVERHOUL_DATE' => 'Год последнего кап. ремонта',
+        'LBL_OVERHAUL_DATE' => 'Год последнего кап. ремонта',
         'LBL_LIFTS_COUNT' => 'Количество лифтов',
         'LBL_ACCOUNTS_COUNT' => 'Количество лицевых счетов',
         'LBL_RESIDENTS_COUNT' => 'Количество жителей',
