@@ -74,6 +74,11 @@
     id = leader_accounts
     version = 1.0.0
 
+[leader_documents]
+    path = packages/leader_documents
+    id = leader_documents
+    version = 1.0.4
+
 [webservice_lk]
     path = packages/webservice_lk
     id = webservice_lk

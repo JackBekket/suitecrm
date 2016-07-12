@@ -43,3 +43,6 @@
 [submodule "packages/leader_users"]
 	path = packages/leader_users
 	url = http://gitlab8.lab321.ru/lider/leader_users.git
+[submodule "packages/leader_documents"]
+	path = packages/leader_documents
+	url = http://gitlab8.lab321.ru/lider/leader_documents.git
