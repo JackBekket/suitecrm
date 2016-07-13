@@ -60,7 +60,8 @@ $mod_strings = array (
         'LBL_PANEL_HOUSE_INFO' => 'Характеристики дома',
         'LBL_PANEL_PREMISES_INFO' => 'Характеристики помещений',
         'LBL_PANEL_AREAS' => 'Площади',
-        'LBL_ADDITIONAL_INFO' => 'Дополнительная информация'
+        'LBL_ADDITIONAL_INFO' => 'Дополнительная информация',
 
+        'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Документы',
 );
 ?>

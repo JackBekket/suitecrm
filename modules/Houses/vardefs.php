@@ -405,6 +405,13 @@ $dictionary["House"] = array (
             'required' => false,
             'audited'  => true,
         ),
+        'documents' => array(
+            'name' => 'documents',
+            'type' => 'link',
+            'relationship' => 'documents_houses',
+            'source' => 'non-db',
+            'vname' => 'LBL_DOCUMENTS_SUBPANEL_TITLE',
+        ),
     ),
     'relationships' => array (
     ),

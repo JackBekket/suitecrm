@@ -21,6 +21,7 @@ $subpanel_layout = array(
         'street' => array(
             'vname' => 'LBL_STREET',
             'width' => '15%',
+            'widget_class' => 'SubPanelDetailViewLink',
         ),
         'house' => array(
             'vname' => 'LBL_HOUSE',
