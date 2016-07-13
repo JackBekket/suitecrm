@@ -72,7 +72,7 @@
 [leader_accounts]
     path = packages/leader_accounts
     id = leader_accounts
-    version = 1.0.0
+    version = 1.0.3
 
 [leader_documents]
     path = packages/leader_documents

@@ -80,6 +80,11 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
+        'LBL_PHONES' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
         'LBL_PANEL_ADVANCED' => 
         array (
           'newTab' => false,
@@ -190,6 +195,16 @@ array (
           ),
         ),
       ),
+
+      'LBL_PHONES' => array (
+        array ('president_phone', 'president_time'),
+        array ('president_email', null),
+        array ('dispatching_phone', 'dispatching_time'),
+        array ('gaccountant_phone', 'gaccountant_time'),
+        array ('gaccountant_email', null),
+        array ('passport_office_phone', 'passport_office_time'),
+      ),
+
       'LBL_PANEL_ADVANCED' => 
       array (
         0 => 
