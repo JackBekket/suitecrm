@@ -19,6 +19,7 @@ $viewdefs['Houses']['EditView'] = array (
         'LBL_PANEL_ADDRESS' => array (
             array ('region', 'city'),
             array ('street', 'house'),
+            array ('latitude', 'longtitude'),
         ),
         'LBL_PANEL_HOUSE_INFO' => array (
           array ('type', 'serialnum'),

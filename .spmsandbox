@@ -42,7 +42,7 @@
 [houses]
     path = packages/houses
     id = houses
-    version = 1.0.4
+    version = 1.0.6
 
 [domains]
     path = packages/domains

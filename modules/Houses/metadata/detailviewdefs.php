@@ -21,6 +21,7 @@ $viewdefs['Houses']['DetailView'] = array (
         'LBL_PANEL_ADDRESS' => array (
             array ('region', 'city'),
             array ('street', 'house'),
+            array ('latitude', 'longtitude'),
             array ('start_service_date', null),
         ),
         'LBL_PANEL_HOUSE_INFO' => array (

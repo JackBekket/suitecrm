@@ -4,6 +4,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 $mod_strings = array (
         'LBL_TYPE' => 'Тип дома',
+        'LBL_LATITUDE' => 'Широта',
+        'LBL_LONGTITUDE' => 'Долгота',
         'LBL_SERVICE_START_DATE' => 'Дата начала обслуживания',
         'LBL_REGION' => 'Регион',
         'LBL_CITY' => 'Город',
