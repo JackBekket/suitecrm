@@ -77,7 +77,7 @@
 [leader_documents]
     path = packages/leader_documents
     id = leader_documents
-    version = 1.0.4
+    version = 1.0.5
 
 [webservice_lk]
     path = packages/webservice_lk
