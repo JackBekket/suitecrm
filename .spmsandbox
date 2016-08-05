@@ -79,6 +79,11 @@
     id = leader_documents
     version = 1.0.5
 
+[leader_aos_products]
+    path = packages/leader_aos_products
+    id = leader_aos_products
+    version = 1.0.0
+
 [webservice_lk]
     path = packages/webservice_lk
     id = webservice_lk

@@ -46,3 +46,6 @@
 [submodule "packages/leader_documents"]
 	path = packages/leader_documents
 	url = http://gitlab8.lab321.ru/lider/leader_documents.git
+[submodule "packages/leader_aos_products"]
+	path = packages/leader_aos_products
+	url = http://gitlab8.lab321.ru/lider/leader_aos_products.git
