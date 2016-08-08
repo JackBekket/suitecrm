@@ -82,7 +82,7 @@
 [leader_aos_products]
     path = packages/leader_aos_products
     id = leader_aos_products
-    version = 1.2.0.2alpha
+    version = 1.2.0.3alpha
 
 [webservice_lk]
     path = packages/webservice_lk
