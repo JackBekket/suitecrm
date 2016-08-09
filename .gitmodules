@@ -52,3 +52,6 @@
 [submodule "packages/leader_aos_products_data"]
 	path = packages/leader_aos_products_data
 	url = http://gitlab8.lab321.ru/lider/leader_aos_products_data.git
+[submodule "packages/leader_pages"]
+	path = packages/leader_pages
+	url = http://gitlab8.lab321.ru/lider/leader_pages.git
