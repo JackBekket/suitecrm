@@ -82,7 +82,7 @@
 [leader_aos_products]
     path = packages/leader_aos_products
     id = leader_aos_products
-    version = 1.2.0
+    version = 1.3.0
 
 [leader_aos_products_data]
     path = packages/leader_aos_products_data
@@ -107,7 +107,7 @@
 [leader_roles]
     path = packages/leader_roles
     id = leader_roles
-    version = 1.2.0
+    version = 1.3.1
 
 [leader_users]
     path = packages/leader_users
