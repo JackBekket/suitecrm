@@ -55,3 +55,6 @@
 [submodule "packages/leader_pages"]
 	path = packages/leader_pages
 	url = http://gitlab8.lab321.ru/lider/leader_pages.git
+[submodule "packages/leader_pages_data"]
+	path = packages/leader_pages_data
+	url = http://gitlab8.lab321.ru/lider/leader_pages_data.git
