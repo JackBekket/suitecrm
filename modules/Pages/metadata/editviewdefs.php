@@ -44,29 +44,25 @@ array (
     array (
       'default' => 
       array (
-        0 => 
         array (
           'name',
           'page_group'
         ),
-        1 => 
+        array ('code', null),
         array (
           array (
             'name' => 'type',
             'label' => 'LBL_TYPE',
           ),
-          0 => 
           array (
             'name' => 'status',
             'studio' => 'visible',
             'label' => 'LBL_STATUS',
           ),
         ),
-        2 => 
         array (
           0 => 'description',
         ),
-        3 => 
         array (
           0 => 
           array (
@@ -76,7 +72,6 @@ array (
             'label' => 'LBL_ADDITIONAL_INFO',
           ),
         ),
-        4 => 
         array (
           0 => 
           array (

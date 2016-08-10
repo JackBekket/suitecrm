@@ -14,6 +14,7 @@ $mod_strings = array (
   'LBL_ADDITIONAL_INFO' => 'Описание',
   'LBL_DELETED' => 'Удалено',
   'LBL_NAME' => 'Страница',
+  'LBL_CODE' => 'Код',
   'LBL_CREATED_USER' => 'Создано',
   'LBL_MODIFIED_USER' => 'Изменено',
   'LBL_LIST_NAME' => 'Название',

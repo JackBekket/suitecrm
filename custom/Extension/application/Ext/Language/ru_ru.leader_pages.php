@@ -18,6 +18,7 @@ $app_list_strings['page_group_dom'] = array (
     'Documents' => 'Документы и отчетность',
     'Phones' => 'Полезные телефоны',
     'Photos' => 'Фотоальбомы',
+    'Cases' => 'Обращения'
   );
 $app_list_strings['page_status_dom'] = array (
     '' => '',

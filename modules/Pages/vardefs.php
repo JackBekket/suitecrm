@@ -30,9 +30,59 @@ $dictionary['Page'] = array(
                 'reportable' => true,
                 'size' => '20',
             ),
+        'code' =>
+            array(
+                'name' => 'code',
+                'vname' => 'LBL_CODE',
+                'type' => 'varchar',
+                'dbType' => 'varchar',
+                'len' => '50',
+                'unified_search' => false,
+                'full_text_search' =>
+                    array(
+                        'boost' => 3,
+                    ),
+                'required' => true,
+                'importable' => 'required',
+                'duplicate_merge' => 'disabled',
+                'merge_filter' => 'disabled',
+                'massupdate' => 0,
+                'no_default' => false,
+                'comments' => '',
+                'help' => '',
+                'duplicate_merge_dom_value' => '0',
+                'audited' => false,
+                'reportable' => true,
+                'size' => '20',
+            ),
+        'sort' =>
+            array(
+                'name' => 'sort',
+                'vname' => 'LBL_SORT',
+                'type' => 'varchar',
+                'dbType' => 'varchar',
+                'len' => '50',
+                'unified_search' => false,
+                'full_text_search' =>
+                    array(
+                        'boost' => 3,
+                    ),
+                'required' => true,
+                'importable' => 'required',
+                'duplicate_merge' => 'disabled',
+                'merge_filter' => 'disabled',
+                'massupdate' => 0,
+                'no_default' => false,
+                'comments' => '',
+                'help' => '',
+                'duplicate_merge_dom_value' => '0',
+                'audited' => false,
+                'reportable' => true,
+                'size' => '20',
+            ),
         'type' =>
             array(
-                'required' => false,
+                'required' => true,
                 'name' => 'type',
                 'vname' => 'LBL_TYPE',
                 'type' => 'enum',
@@ -56,12 +106,12 @@ $dictionary['Page'] = array(
             ),
         'page_group' =>
             array(
-                'required' => false,
+                'required' => true,
                 'name' => 'page_group',
                 'vname' => 'LBL_PAGE_GROUP',
                 'type' => 'enum',
                 'massupdate' => 0,
-                'default' => 'Article',
+                'default' => '',
                 'no_default' => false,
                 'comments' => '',
                 'help' => '',
@@ -80,7 +130,7 @@ $dictionary['Page'] = array(
             ),
         'status' =>
             array(
-                'required' => false,
+                'required' => true,
                 'name' => 'status',
                 'vname' => 'LBL_STATUS',
                 'type' => 'enum',

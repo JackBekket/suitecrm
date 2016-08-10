@@ -46,12 +46,11 @@ array (
     array (
       'default' => 
       array (
-        0 => 
         array (
           'name',
           'page_group'
         ),
-        1 => 
+        array ('code', null),
         array (
           0 => 
           array (
@@ -65,7 +64,6 @@ array (
             'label' => 'LBL_STATUS',
           ),
         ),
-        2 => 
         array (
           0 => 
           array (
@@ -74,7 +72,6 @@ array (
             'customCode' => '{$fields.description.value}',
           ),
         ),
-        3 => 
         array (
           0 => 
           array (
@@ -84,7 +81,6 @@ array (
             'label' => 'LBL_ADDITIONAL_INFO',
           ),
         ),
-        4 => 
         array (
           0 => 'date_entered',
           1 => 
@@ -94,7 +90,6 @@ array (
             'label' => 'LBL_AUTHOR',
           ),
         ),
-        5 => 
         array (
           0 => 'date_modified',
         ),

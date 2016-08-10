@@ -16,6 +16,7 @@ $viewdefs[$module_name]['QuickCreate'] = array(
     
     array (
       'name',
+      'code',
       'assigned_user_name',
     ),
   ),

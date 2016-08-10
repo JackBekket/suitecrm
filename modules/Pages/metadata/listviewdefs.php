@@ -18,6 +18,13 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'CODE' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_CODE',
+    'default' => true,
+    'link' => true,
+  ),
   'TYPE' => 
   array (
     'type' => 'enum',

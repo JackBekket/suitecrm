@@ -9,7 +9,7 @@ $popupMeta = array('moduleMain' => $module_name,
 						'whereClauses' => 
 							array('name' => $_module_name . '.name', 
 								),
-						    'searchInputs'=> array($_module_name. '_number', 'name', 'priority','status'),
+						    'searchInputs'=> array($_module_name. '_number', 'name', 'code','status'),
 							
 						);
 ?>
