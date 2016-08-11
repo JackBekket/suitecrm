@@ -37,6 +37,7 @@ $mod_strings = array (
   'LBL_PAGE_GROUP' => 'Группа страниц',
   'LBL_AUTHOR_USER_ID' => 'Автор(ID)',
   'LBL_AUTHOR' => 'Автор статьи',
+  'LBL_SORT' => 'Сорт.',
 );
 
 $mod_strings['LBL_PAGES_TITLE'] = 'Страницы';
