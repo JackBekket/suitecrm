@@ -7,8 +7,24 @@ class PagesViewEdit extends ViewEdit
 {
     function display()
     {
+        $showDescription = $this->bean->type == 'Article';
+
+        if(!$showDescription) {
+            $css = <<<CSS
+<style>
+label[for="description"], #description {
+    display: none;
+}
+</style>
+CSS;
+            echo $css;
+        }
+
         parent::display();
-        $this->displayTMCE4();
+
+        if($showDescription) {
+            $this->displayTMCE4();
+        }
     }
 
 

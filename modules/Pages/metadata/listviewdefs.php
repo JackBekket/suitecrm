@@ -3,13 +3,6 @@
 $module_name = 'Pages';
 $listViewDefs [$module_name] = 
 array (
-  'SORT' => 
-  array (
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_SORT',
-    'width' => '10%',
-  ),
   'PAGE_GROUP' => 
   array (
     'type' => 'enum',
@@ -45,6 +38,13 @@ array (
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_STATUS',
+    'width' => '10%',
+  ),
+  'SORT' => 
+  array (
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_SORT',
     'width' => '10%',
   ),
   'DATE_ENTERED' => 

@@ -11,7 +11,7 @@ class AOS_Product_CategoriesSecurityForm extends SecurityForm
     function setBean($bean)
     {
         parent::setBean($bean);
-        if ($bean->type == 'PaidServices') {
+        if ($bean->id == 'PaidServices') {
           $this->setDefaultFieldsMode(SecurityForm::MODE_DEFAULT_DISABLED);
         }
     }
