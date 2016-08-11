@@ -8,25 +8,17 @@ array (
   array (
     'templateMeta' => 
     array (
-      'maxColumns' => '2',
-      'widths' => 
-      array (
-        0 => 
-        array (
-          'label' => '10',
-          'field' => '30',
-        ),
-        1 => 
-        array (
-          'label' => '10',
-          'field' => '30',
-        ),
+      'form' => array(
+        'hideAudit' => true,
       ),
+      'maxColumns' => '1',
+      'labelsOnTop' => true,
+      'widths' => array (),
       'includes' => 
       array (
         0 => 
         array (
-          'file' => 'include/javascript/tiny_mce/tiny_mce.js',
+          'file' => 'custom/include/javascript/tinymce4/tinymce.min.js',
         ),
       ),
       'useTabs' => false,
@@ -44,16 +36,14 @@ array (
     array (
       'default' => 
       array (
-        array (
-          'name',
-          'page_group'
-        ),
-        array ('code', null),
-        array (
-          array (
-            'name' => 'type',
-            'label' => 'LBL_TYPE',
+        array(
+          array(
+            //'name' => 'additional_info',
+            'customCode' => '{$fields.additional_info.value}',
+            'hideLabel' => 'true',
           ),
+        ),
+        array (
           array (
             'name' => 'status',
             'studio' => 'visible',
@@ -62,23 +52,6 @@ array (
         ),
         array (
           0 => 'description',
-        ),
-        array (
-          0 => 
-          array (
-            'name' => 'additional_info',
-            'comment' => 'Full text of the note',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDITIONAL_INFO',
-          ),
-        ),
-        array (
-          0 => 
-          array (
-            'name' => 'author',
-            'studio' => 'visible',
-            'label' => 'LBL_AUTHOR',
-          ),
         ),
       ),
     ),

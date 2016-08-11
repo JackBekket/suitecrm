@@ -65,12 +65,8 @@ array (
           ),
         ),
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'label' => 'LBL_DESCRIPTION',
-            'customCode' => '{$fields.description.value}',
-          ),
+          0 => 'date_entered',
+          1 => 'date_modified',
         ),
         array (
           0 => 
@@ -82,16 +78,12 @@ array (
           ),
         ),
         array (
-          0 => 'date_entered',
-          1 => 
+          0 => 
           array (
-            'name' => 'author',
-            'studio' => 'visible',
-            'label' => 'LBL_AUTHOR',
+            'name' => 'description',
+            'label' => 'LBL_DESCRIPTION',
+            'customCode' => '{$fields.description.value}',
           ),
-        ),
-        array (
-          0 => 'date_modified',
         ),
       ),
     ),

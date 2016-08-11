@@ -24,8 +24,6 @@ class Page extends Basic {
 		var $assigned_user_link;
 		var $status;
 		var $type;
-		var $user_id_c;
-		var $author;
 		var $page_group;
 
     public function __construct(){
