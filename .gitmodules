@@ -58,3 +58,6 @@
 [submodule "packages/leader_pages_data"]
 	path = packages/leader_pages_data
 	url = http://gitlab8.lab321.ru/lider/leader_pages_data.git
+[submodule "packages/tinymce4"]
+	path = packages/tinymce4
+	url = http://gitlab8.lab321.ru/suitecrm/tinymce4.git

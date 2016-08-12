@@ -48,19 +48,6 @@ $subpanel_layout = array (
       'vname' => 'LBL_STATUS',
       'width' => '10%',
     ),
-    'author' => 
-    array (
-      'type' => 'relate',
-      'studio' => 'visible',
-      'vname' => 'LBL_AUTHOR',
-      'id' => 'USER_ID_C',
-      'link' => true,
-      'width' => '10%',
-      'default' => true,
-      'widget_class' => 'SubPanelDetailViewLink',
-      'target_module' => 'Users',
-      'target_record_key' => 'user_id_c',
-    ),
     'date_entered' => 
     array (
       'type' => 'datetime',

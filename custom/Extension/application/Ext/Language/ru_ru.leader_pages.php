@@ -21,7 +21,6 @@ $app_list_strings['page_group_dom'] = array (
     'Cases' => 'Обращения'
   );
 $app_list_strings['page_status_dom'] = array (
-    '' => '',
     'Hidden' => 'Скрыта',
     'Shown' => 'Видима',
   );

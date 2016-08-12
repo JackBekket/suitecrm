@@ -23,19 +23,18 @@ array (
     'width' => '32%',
     'label' => 'LBL_NAME',
     'default' => true,
-    'link' => true,
+    'link' => false,
   ),
   'CODE' => 
   array (
     'width' => '32%',
     'label' => 'LBL_CODE',
-    'default' => true,
-    'link' => true,
+    'default' => false,
   ),
   'TYPE' => 
   array (
     'type' => 'enum',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
     'label' => 'LBL_TYPE',
     'width' => '10%',
@@ -48,29 +47,19 @@ array (
     'label' => 'LBL_STATUS',
     'width' => '10%',
   ),
-  'AUTHOR' => 
-  array (
-    'type' => 'relate',
-    'studio' => 'visible',
-    'label' => 'LBL_AUTHOR',
-    'id' => 'USER_ID_C',
-    'link' => true,
-    'width' => '10%',
-    'default' => true,
-  ),
   'DATE_ENTERED' => 
   array (
     'type' => 'datetime',
     'label' => 'LBL_DATE_ENTERED',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
   'DATE_MODIFIED' => 
   array (
     'type' => 'datetime',
     'label' => 'LBL_DATE_MODIFIED',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
   'ASSIGNED_USER_NAME' => 
   array (

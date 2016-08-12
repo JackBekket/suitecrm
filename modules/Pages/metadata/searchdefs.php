@@ -9,13 +9,13 @@ $module_name = 'Pages';
                     'layout' => array(  					
 						'basic_search' => array(
 							'name', 
-              'code',
-							array('name'=>'current_user_only', 'label'=>'LBL_CURRENT_USER_FILTER', 'type'=>'bool'),
+              'status',
 							),
 						'advanced_search' => array(
 							'name', 
               'code',
 							array('name' => 'assigned_user_id', 'label' => 'LBL_ASSIGNED_TO', 'type' => 'enum', 'function' => array('name' => 'get_user_array', 'params' => array(false))),
+              array('name'=>'current_user_only', 'label'=>'LBL_CURRENT_USER_FILTER', 'type'=>'bool'),
 						),
 					),
  			   );

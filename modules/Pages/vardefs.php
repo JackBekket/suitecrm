@@ -29,6 +29,7 @@ $dictionary['Page'] = array(
                 'audited' => false,
                 'reportable' => true,
                 'size' => '20',
+                'inline_edit' => 0,
             ),
         'code' =>
             array(
@@ -54,6 +55,7 @@ $dictionary['Page'] = array(
                 'audited' => false,
                 'reportable' => true,
                 'size' => '20',
+                'inline_edit' => 0,
             ),
         'sort' =>
             array(
@@ -79,6 +81,7 @@ $dictionary['Page'] = array(
                 'audited' => false,
                 'reportable' => true,
                 'size' => '20',
+                'inline_edit' => 0,
             ),
         'type' =>
             array(
@@ -103,6 +106,7 @@ $dictionary['Page'] = array(
                 'options' => 'page_type_dom',
                 'studio' => 'visible',
                 'dependency' => false,
+                'inline_edit' => 0,
             ),
         'page_group' =>
             array(
@@ -127,15 +131,15 @@ $dictionary['Page'] = array(
                 'options' => 'page_group_dom',
                 'studio' => 'visible',
                 'dependency' => false,
+                'inline_edit' => 0,
             ),
         'status' =>
             array(
-                'required' => true,
                 'name' => 'status',
                 'vname' => 'LBL_STATUS',
                 'type' => 'enum',
                 'massupdate' => 0,
-                'default' => 'Hidden',
+                'default' => 'Shown',
                 'no_default' => false,
                 'comments' => '',
                 'help' => '',
@@ -174,6 +178,7 @@ $dictionary['Page'] = array(
                 'merge_filter' => 'disabled',
                 'size' => '20',
                 'studio' => 'visible',
+                'inline_edit' => 0,
             ),
         'additional_info' =>
             array(
@@ -197,53 +202,7 @@ $dictionary['Page'] = array(
                 'merge_filter' => 'disabled',
                 'size' => '20',
                 'studio' => 'visible',
-            ),
-        'user_id_c' =>
-            array(
-                'required' => false,
-                'name' => 'user_id_c',
-                'vname' => 'LBL_AUTHOR_USER_ID',
-                'type' => 'id',
-                'massupdate' => 0,
-                'no_default' => false,
-                'comments' => '',
-                'help' => '',
-                'importable' => 'true',
-                'duplicate_merge' => 'disabled',
-                'duplicate_merge_dom_value' => 0,
-                'audited' => false,
-                'reportable' => false,
-                'unified_search' => false,
-                'merge_filter' => 'disabled',
-                'len' => 36,
-                'size' => '20',
-            ),
-        'author' =>
-            array(
-                'required' => true,
-                'source' => 'non-db',
-                'name' => 'author',
-                'vname' => 'LBL_AUTHOR',
-                'type' => 'relate',
-                'massupdate' => 0,
-                'no_default' => false,
-                'comments' => '',
-                'help' => '',
-                'importable' => 'true',
-                'duplicate_merge' => 'disabled',
-                'duplicate_merge_dom_value' => '0',
-                'audited' => false,
-                'reportable' => true,
-                'unified_search' => false,
-                'merge_filter' => 'disabled',
-                'len' => '255',
-                'size' => '20',
-                'id_name' => 'user_id_c',
-                'ext2' => 'Users',
-                'module' => 'Users',
-                'rname' => 'name',
-                'quicksearch' => 'enabled',
-                'studio' => 'visible',
+                'inline_edit' => 0,
             ),
     ),
     'relationships' => array(),
