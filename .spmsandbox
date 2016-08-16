@@ -107,7 +107,7 @@
 [leader_webservice_lk]
     path = packages/leader_webservice_lk
     id = leader_webservice_lk
-    version = 1.0.0
+    version = 1.1.0
 
 [leader_roles]
     path = packages/leader_roles
