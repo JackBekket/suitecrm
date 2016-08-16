@@ -1458,8 +1458,10 @@ EOQ;
                 $key = 'module';
             }
 
-            if (($this->isAdmin() && isset($actions[$module][$key]))
-                ) {
+            //if (($this->isAdmin() && isset($actions[$module][$key]))
+            //    ) {
+            if(!empty($actions[$module][$key]['admin']['aclaccess'])
+                    && $actions[$module][$key]['admin']['aclaccess'] >= ($isDev ? ACL_ALLOW_ADMIN_DEV : ACL_ALLOW_ADMIN)) { // HS321
                 $myModules[] = $module;
             }
         }

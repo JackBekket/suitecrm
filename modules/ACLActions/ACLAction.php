@@ -425,7 +425,8 @@ class ACLAction  extends SugarBean{
             return true;
         }
 		*/
-		if($access != 0 && ($access == ACL_ALLOW_ALL
+		//if($access != 0 && ($access == ACL_ALLOW_ALL
+		if($access != 0 && ($access >= ACL_ALLOW_ALL //HS321
 			|| ($is_owner && ($access == ACL_ALLOW_OWNER || $access == ACL_ALLOW_GROUP) )  //if owner that's better than in group so count it...better way to clean this up?
 			|| ($in_group && $access == ACL_ALLOW_GROUP) //need to pass if in group with access somehow
 		)) {
@@ -504,7 +505,8 @@ class ACLAction  extends SugarBean{
 /**
             return ACLAction::hasAccess($is_owner, $_SESSION['ACL'][$user_id][$category][$type][$action]['aclaccess']);
 */
-			return ACLAction::hasAccess($is_owner, $in_group, $_SESSION['ACL'][$user_id][$category][$type][$action]['aclaccess']);
+			//return ACLAction::hasAccess($is_owner, $in_group, $_SESSION['ACL'][$user_id][$category][$type][$action]['aclaccess']);
+			return ACLAction::hasAccess($is_owner, $in_group, ACLAction::getUserAccessLevel($user_id, $category, $action, $type)); //HS321
         }
         return false;
 

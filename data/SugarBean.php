@@ -1200,6 +1200,12 @@ class SugarBean
      */
     public function isOwner($user_id)
     {
+        /* START EMPLOYEES_ACL HS321 */
+        if($this->module_name == 'Users') {
+            return $this->id == $user_id;
+        }
+        /* END EMPLOYEES_ACL HS321 */
+
         //if we don't have an id we must be the owner as we are creating it
         if (!isset($this->id)) {
             return true;
