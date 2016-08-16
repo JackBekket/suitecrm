@@ -77,7 +77,7 @@
 [leader_documents]
     path = packages/leader_documents
     id = leader_documents
-    version = 1.0.5
+    version = 1.1.0
 
 [leader_aos_products]
     path = packages/leader_aos_products
@@ -97,7 +97,7 @@
 [leader_pages_data]
     path = packages/leader_pages_data
     id = leader_pages_data
-    version = 1.1.1
+    version = 1.2.1
 
 [webservice_lk]
     path = packages/webservice_lk
