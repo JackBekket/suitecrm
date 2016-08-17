@@ -5,7 +5,7 @@ global $mod_strings, $app_strings, $sugar_config;
 if ( ACLController::checkAccess('Houses', 'edit', true) ) {
     $module_menu[] = array (
         "index.php?module=Houses&action=EditView&return_module=Houses&return_action=index",
-        $mod_strings['LNK_NEW_HOUSES'],
+        $mod_strings['LNK_NEW_HOUSE'],
         "CreateHouse",
         'Houses'
     );
