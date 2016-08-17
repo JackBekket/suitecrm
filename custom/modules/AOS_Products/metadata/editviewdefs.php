@@ -46,7 +46,6 @@ array (
     array (
       'default' => 
       array (
-        0 => 
         array (
           0 => 
           array (
@@ -59,7 +58,6 @@ array (
             'label' => 'LBL_PART_NUMBER',
           ),
         ),
-        1 => 
         array (
           0 => 
           array (
@@ -72,7 +70,6 @@ array (
             'label' => 'LBL_TYPE',
           ),
         ),
-        2 => 
         array (
           'measure',
           array (
@@ -81,7 +78,6 @@ array (
             'label' => 'LBL_CURRENCY',
           ),
         ),
-        3 => 
         array (
           0 => 
           array (
@@ -94,7 +90,6 @@ array (
             'label' => 'LBL_PRICE',
           ),
         ),
-        4 => 
         array (
           0 => 
           array (
@@ -107,7 +102,7 @@ array (
             'label' => 'LBL_URL',
           ),
         ),
-        5 => 
+        array ('supplier_name', 'delivered_by_owner'),
         array (
           0 => 
           array (
@@ -115,7 +110,6 @@ array (
             'label' => 'LBL_DESCRIPTION',
           ),
         ),
-        6 => 
         array (
           0 => 
           array (

@@ -48,6 +48,15 @@ array (
           'aos_product_category_id',
       ),
   ),
+	'SUPPLIER_NAME' => array(
+		'width' => '20', 
+		'label' => 'LBL_SUPPLIER_NAME', 
+		'module' => 'Accounts',
+		'id' => 'SUPPLIER_ID',
+		'link' => true,
+        'default' => true,
+        'ACLTag' => 'ACCOUNT',
+        'related_fields' => array('supplier_id')),
   'CREATED_BY_NAME' => 
   array (
     'width' => '10%',
