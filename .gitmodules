@@ -64,3 +64,9 @@
 [submodule "packages/leader_webservice_lk"]
 	path = packages/leader_webservice_lk
 	url = http://gitlab8.lab321.ru/lider/leader_webservice_lk.git
+[submodule "packages/leader_accounts_data"]
+	path = packages/leader_accounts_data
+	url = http://gitlab8.lab321.ru/lider/leader_accounts_data.git
+[submodule "packages/leader_users_data"]
+	path = packages/leader_users_data
+	url = http://gitlab8.lab321.ru/lider/leader_users_data.git

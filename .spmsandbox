@@ -47,7 +47,7 @@
 [domains]
     path = packages/domains
     id = domains
-    version = 1.0.6
+    version = 1.1.0
 
 [Accounts_rf_props_field]
     path = packages/accounts_rf_props_field
@@ -123,3 +123,13 @@
     path = packages/tinymce4
     id = tinymce4
     version = 1.0.0
+
+[leader_accounts_data]
+    path = packages/leader_accounts_data
+    id = leader_accounts_data
+    version = 1.0.1
+
+[leader_users_data]
+    path = packages/leader_users_data
+    id = leader_users_data
+    version = 1.0.1
