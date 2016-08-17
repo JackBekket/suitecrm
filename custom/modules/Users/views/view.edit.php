@@ -14,6 +14,9 @@ class CustomUsersViewEdit extends UsersViewEdit
         $is_admin_for_users = $current_user->isAdminForModule('Users');
         $edit_self = $current_user->id == $this->bean->id;
         $this->ss->assign('IS_ADMIN_FOR_USERS', $is_admin_for_users);
+        if($this->bean->isAdmin() && !$current_user->isAdmin()) {
+            $this->ss->assign('CHANGE_PWD', 0);
+        }
 
         echo parent::display();
 

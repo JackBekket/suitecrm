@@ -806,6 +806,12 @@ EOQ;
 			return false;
 		}
 
+		/* START HS321 */
+		if($this->isAdmin() && !$current_user->isAdmin()) {
+			echo "You can't change admin password";
+			sugar_die("You can't change admin password");
+		}
+		/* END HS321 */
 
 		//check old password current user is not an admin or current user is an admin editing themselves
 		if (!$current_user->isAdminForModule('Users')  || ($current_user->isAdminForModule('Users') && ($current_user->id == $this->id))) {
@@ -1702,6 +1708,17 @@ EOQ;
             'status' => false,
             'message' => ''
         );
+
+        /* START HS321 */
+        /* Админ модуля пользователей может редактировать email админа.
+         * Блокируем ему отправку писем с паролем. */
+        if($this->isAdmin()) {
+            return array(
+                'status' => false,
+                'message' => 'Password repaire disabled',
+            );
+        }
+        /* END HS321 */
 
         $emailTemp = new EmailTemplate();
         $emailTemp->disable_row_level_security = true;

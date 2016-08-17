@@ -117,7 +117,7 @@
 [leader_users]
     path = packages/leader_users
     id = leader_users
-    version = 1.1.0
+    version = 1.2.0
 
 [tinymce4]
     path = packages/tinymce4
