@@ -47,7 +47,7 @@
 [domains]
     path = packages/domains
     id = domains
-    version = 1.1.0
+    version = 1.1.1
 
 [Accounts_rf_props_field]
     path = packages/accounts_rf_props_field
