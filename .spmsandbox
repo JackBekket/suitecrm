@@ -87,7 +87,7 @@
 [leader_aos_products_data]
     path = packages/leader_aos_products_data
     id = leader_aos_products_data
-    version = 1.1.0
+    version = 1.2.0
 
 [leader_pages]
     path = packages/leader_pages
