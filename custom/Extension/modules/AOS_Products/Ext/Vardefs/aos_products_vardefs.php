@@ -1,5 +1,7 @@
 <?php 
 
+$dictionary["AOS_Products"]["fields"]["type"]['default'] = 'Service';
+
 $dictionary["AOS_Products"]["fields"]["measure"] = array (
     'name' => 'measure',
     'required' => true,
