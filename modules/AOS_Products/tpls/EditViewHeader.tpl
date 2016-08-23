@@ -51,7 +51,10 @@
 <input type="hidden" name="return_action" value="{$smarty.request.return_action}">
 <input type="hidden" name="return_id" value="{$smarty.request.return_id}">
 <input type="hidden" name="contact_role">
-{if !empty($smarty.request.return_module)}
+{if !empty($smarty.request.return_relationship)}
+<input type="hidden" name="relate_to" value="{$smarty.request.return_relationship}">
+<input type="hidden" name="relate_id" value="{$smarty.request.return_id}">
+{elseif !empty($smarty.request.return_module)}
 <input type="hidden" name="relate_to" value="{$smarty.request.return_module}">
 <input type="hidden" name="relate_id" value="{$smarty.request.return_id}">
 {/if}
