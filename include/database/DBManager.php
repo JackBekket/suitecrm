@@ -340,6 +340,8 @@ abstract class DBManager
 			    $message = "Database error";
 			}
 			$this->log->fatal($message);
+			$e = new Exception();
+			$this->log->fatal($e->getTraceAsString());
 			if ($dieOnError || $this->dieOnError) {
 				if(isset($GLOBALS['app_strings']['ERR_DB_FAIL'])) {
 					sugar_die($GLOBALS['app_strings']['ERR_DB_FAIL']);
