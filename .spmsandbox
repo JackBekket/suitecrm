@@ -112,12 +112,12 @@
 [leader_roles]
     path = packages/leader_roles
     id = leader_roles
-    version = 1.5.0
+    version = 1.6.0
 
 [leader_users]
     path = packages/leader_users
     id = leader_users
-    version = 1.2.0
+    version = 1.2.1
 
 [tinymce4]
     path = packages/tinymce4
@@ -133,3 +133,8 @@
     path = packages/leader_users_data
     id = leader_users_data
     version = 1.0.1
+
+[leader_config]
+    path = packages/leader_config
+    id = leader_config
+    version = 1.0.0
