@@ -2917,9 +2917,11 @@ input[type=text].cstm_code {
     max-height:50px !important;
 }
 
+/* HARDSOFT REMOVED (leader_pages)
 .nav-pills li {
     display: inline;
 }
+*/
 
 ol, ul, dl {
     margin:0;
@@ -4310,9 +4312,28 @@ div.action_buttons form {
     display:block !important;
 }
 
-.actionmenulinks a span{
-    padding:5px;
+/* BY HARDSOFT MODIFIED AND ADDED(leader_pages) START */
+.actionmenulinks {
+    margin-top:1em !important;
 }
+.actionmenulinks a {
+    line-height:1em;
+}
+.actionmenulinks.pages-group > a {
+    color: white !important;
+    background-color: gray !important;
+    text-align: center !important;
+}
+.actionmenulinks.page {
+    color: white !important;
+    background-color: lightgray !important;
+    text-align: center !important; 
+    border-radius:4px;
+    padding:4px;
+}
+
+/* BY HARDSOFT MODIFIED AND ADDED(leader_pages) END */
+
 
 /* Fix to make Boostrap drop down hover on larger screens */
 

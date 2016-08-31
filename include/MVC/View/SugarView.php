@@ -311,6 +311,10 @@ class SugarView
         global $mod_strings;
         global $current_language;
 
+        /* HARDSOFT (leader_pages) START */
+        global $db;
+        /* HARDSOFT (leader_pages) END */
+
         $GLOBALS['app']->headerDisplayed = true;
 
         $themeObject = SugarThemeRegistry::current();
@@ -655,12 +659,39 @@ class SugarView
             $ss->assign("shortcutTopMenu",$shortcutTopMenu);
             $ss->assign('USE_GROUP_TABS',$usingGroupTabs);
 
+
+
             // This is here for backwards compatibility, someday, somewhere, it will be able to be removed
             $ss->assign("moduleTopMenu",$groupTabs[$app_strings['LBL_TABGROUP_ALL']]['modules']);
             $ss->assign("moduleExtraMenu",$groupTabs[$app_strings['LBL_TABGROUP_ALL']]['extra']);
-
-
         }
+
+        /* HARDSOFT (leader_pages) START */
+        $pages = $db->query('SELECT id, page_group, code, name FROM pages WHERE deleted = 0 ORDER BY sort', true);
+
+        $pages_menu = [];
+        while($page = $db->fetchByAssoc($pages)) {
+
+          if ($page['code'] == 'PaidServices') {
+
+            $items2 = [];
+            $categories = $db->query("SELECT id, name FROM aos_product_categories WHERE deleted = 0 AND parent_category_id = 'PaidServices' ORDER BY name", true);
+            while ($cat = $db->fetchByAssoc($categories)) {
+              $items2[] = 
+                Array('URL' => "index.php?module=Paid_Services&action=DetailView&record={$cat['id']}&return_module=PaidCategories&return_action=index", 'LABEL' => $cat['name']);
+            }
+            $pages_menu[$page['page_group']][]=Array('URL' => "index.php?module=Paid_Services&action=ListView", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => $items2);
+          } else if ($page['code'] == 'Houses') {
+            $pages_menu[$page['page_group']][] = 
+              Array('URL' => "index.php?module=Houses&action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => []);
+          } else {
+            $pages_menu[$page['page_group']][] = 
+              Array('URL' => "index.php?module=Pages&action=EditView&record={$page['id']}&return_module=Pages&return_action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => []);
+          }
+        }
+        $ss->assign("pagesMenu",$pages_menu);
+        $ss->assign("pagesGroups", $app_list_strings['page_group_dom']);
+        /* HARDSOFT (leader_pages) END */
 
         if ( isset($extraTabs) && is_array($extraTabs) ) {
             // Adding shortcuts array to extra menu array for displaying shortcuts associated with each module
@@ -1248,6 +1279,8 @@ EOHTML;
         if (file_exists('custom/application/Ext/Menus/menu.ext.php')) {
             require('custom/application/Ext/Menus/menu.ext.php');
         }
+
+
 
         $mod_strings = $curr_mod_strings;
         $builtModuleMenu = $module_menu;

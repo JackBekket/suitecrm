@@ -64,3 +64,26 @@ $dictionary["AOS_Products"]["fields"]["suppliers"] = array (
     'vname' => 'LBL_CONTACT',
 );
 
+$dictionary["AOS_Products"]["fields"]["products2"] = array (
+    'name' => 'products2',
+    'type' => 'link',
+    'relationship' => 'products2',
+    'source' => 'non-db',
+    'link_type' => 'one',
+    'module' => 'Paid_Services',
+    'bean_name' => 'Paid_Service',
+    'vname' => 'LBL_AOS_PRODUCT_CATEGORIES',
+);
+
+$dictionary["AOS_Products"]["relationships"]["products2"] = array (
+    'lhs_module' => 'Paid_Services',
+    'lhs_table' => 'aos_product_categories',
+    'lhs_key' => 'id',
+    'rhs_module' => 'AOS_Products',
+    'rhs_table' => 'aos_products',
+    'rhs_key' => 'aos_product_category_id',
+    'relationship_type' => 'one-to-many',
+);
+
+
+

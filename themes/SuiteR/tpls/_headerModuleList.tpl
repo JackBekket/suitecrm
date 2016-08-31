@@ -114,6 +114,7 @@
                                             {/if}
                                         {/foreach}
                                     {/if}
+                                    <!-- BY HARDSOFT REMOVED (leader_pages)
                                     <h3 class="recent_h3">{$APP.LBL_LAST_VIEWED}</h3>
                                     {foreach from=$recentRecords item=item name=lastViewed}
                                         {if $item.module_name == $name}
@@ -144,6 +145,7 @@
                                         {foreachelse}
                                         {$APP.NTC_NO_ITEMS_DISPLAY}
                                     {/foreach}
+                                    -->
                                 </ul>
                             </li>
                         {/if}
@@ -188,6 +190,7 @@
                                             {/if}
                                         {/foreach}
                                     {/if}
+                                    <!-- BY HARDSOFT REMOVED (leader_pages)
                                     <h3 class="recent_h3">{$APP.LBL_LAST_VIEWED}</h3>
                                     {foreach from=$recentRecords item=item name=lastViewed}
                                         {if $item.module_name == $name}
@@ -220,6 +223,7 @@
                                         {foreachelse}
                                         {$APP.NTC_NO_ITEMS_DISPLAY}
                                     {/foreach}
+                                    -->
                                 </ul>
                             </li>
                         {else}
@@ -239,6 +243,7 @@
                                             {/if}
                                         {/foreach}
                                     {/if}
+                                    <!-- BY HARDSOFT REMOVED (leader_pages)
                                     <h3 class="recent_h3">{$APP.LBL_LAST_VIEWED}</h3>
                                     {foreach from=$recentRecords item=item name=lastViewed}
                                         {if $item.module_name == $name}
@@ -271,6 +276,7 @@
                                         {foreachelse}
                                         {$APP.NTC_NO_ITEMS_DISPLAY}
                                     {/foreach}
+                                    -->
                                 </ul>
                             </li>
                         {/if}
@@ -415,6 +421,58 @@
                         {/if}
                     {/foreach}
                 </div>
+
+                <!-- BY HARDSOFT ADDED (leader_pages) START -->
+                <div id="pageMenuSidebar">
+                            <ul class="nav nav-pills nav-stacked">
+                                {if count($pagesMenu) > 0}
+                                    <h2 class="recent_h3">Страницы</h2>
+
+                                    {foreach from=$pagesMenu key=group item=groupItems}
+                                        {if count($groupItems) > 1}
+                                          <li  class="actionmenulinks pages-group" role="presentation" data-toggle="collapse" data-target="#pages-{$group}">
+                                            <a href="#"><span>{$pagesGroups.$group}</span></a>
+                                          </li>
+                                          <div id="pages-{$group}" class="collapse in"> 
+                                          {foreach from=$groupItems item=page}
+                                            <li class="actionmenulinks page" role="presentation">
+                                              <a href="{$page.URL}">{$page.LABEL}</a>
+                                              {if count($page.ITEMS) > 0}
+                                                &nbsp;&nbsp;<span class="glyphicon glyphicon-expand" data-toggle="collapse" data-target="#pages-{$page.CODE}-items"></span>
+                                              {/if}
+                                            </li>
+                                            {if count($page.ITEMS) > 0}
+                                              <div id="pages-{$page.CODE}-items" class="collapse in"> 
+                                                {foreach from=$page.ITEMS item=subitem}
+                                                  <li class="actionmenulinks subitem" role="presentation"><a href="{$subitem.URL}">{$subitem.LABEL}</a></li>
+                                                {/foreach}
+                                              </div>
+                                            {/if}
+                                          {/foreach}
+                                          </div>
+                                         {else}
+                                            <li class="actionmenulinks pages-group" role="presentation">
+                                              <a href="{$groupItems.0.URL}">{$groupItems.0.LABEL}</a>
+                                              {if count($groupItems.0.ITEMS) > 0}
+                                                &nbsp;&nbsp;<span  class="glyphicon glyphicon-expand" data-toggle="collapse" data-target="#pages-{$groupItems.0.CODE}-items" align="right"></span>
+                                              {/if}
+                                            </li>
+                                            {if count($groupItems.0.ITEMS) > 0}
+                                              <div id="pages-{$groupItems.0.CODE}-items" class="collapse in"> 
+                                                {foreach from=$groupItems.0.ITEMS item=subitem}
+                                                  <li class="actionmenulinks subitem" role="presentation"><a href="{$subitem.URL}">{$subitem.LABEL}</a></li>
+                                                {/foreach}
+                                              </div>
+                                            {/if}
+                                         {/if}
+                                    {/foreach}
+                                    <br>
+                                {/if}
+                            </ul>
+                </div>
+                <!-- BY HARDSOFT ADDED (leader_pages) END -->
+
+                <!-- BY HARDSOFT REMOVED (leader_pages)
                 <div id="recentlyViewedSidebar">
                     <h2 class="recent_h3">{$APP.LBL_LAST_VIEWED}</h2>
                     <ul class="nav nav-pills nav-stacked">
@@ -432,6 +490,7 @@
                         {/foreach}
                     </ul>
                 </div>
+                -->
                 </br>
                 <div id="favoritesSidebar">
                     <h2 class="recent_h3">{$APP.LBL_FAVORITES}</h2>
