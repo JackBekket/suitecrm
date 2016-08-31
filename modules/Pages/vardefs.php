@@ -57,6 +57,32 @@ $dictionary['Page'] = array(
                 'size' => '20',
                 'inline_edit' => 0,
             ),
+        'parent_code' =>
+            array(
+                'name' => 'parent_code',
+                'vname' => 'LBL_PARENT_CODE',
+                'type' => 'varchar',
+                'dbType' => 'varchar',
+                'len' => '50',
+                'unified_search' => false,
+                'full_text_search' =>
+                    array(
+                        'boost' => 3,
+                    ),
+                'required' => true,
+                'importable' => 'required',
+                'duplicate_merge' => 'disabled',
+                'merge_filter' => 'disabled',
+                'massupdate' => 0,
+                'no_default' => false,
+                'comments' => '',
+                'help' => '',
+                'duplicate_merge_dom_value' => '0',
+                'audited' => false,
+                'reportable' => true,
+                'size' => '20',
+                'inline_edit' => 0,
+            ),
         'sort' =>
             array(
                 'name' => 'sort',

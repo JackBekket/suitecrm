@@ -667,7 +667,7 @@ class SugarView
         }
 
         /* HARDSOFT (leader_pages) START */
-        $pages = $db->query('SELECT id, page_group, code, name FROM pages WHERE deleted = 0 ORDER BY sort', true);
+        $pages = $db->query("SELECT id, page_group, code, name FROM pages WHERE deleted = 0 AND IFNULL(parent_code, '') = '' ORDER BY sort", true);
 
         $pages_menu = [];
         while($page = $db->fetchByAssoc($pages)) {
@@ -685,8 +685,14 @@ class SugarView
             $pages_menu[$page['page_group']][] = 
               Array('URL' => "index.php?module=Houses&action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => []);
           } else {
+            $items2 = [];
+            $subpages = $db->query("SELECT id, name, code FROM pages WHERE deleted = 0 AND parent_code = '{$page['code']}' ORDER BY sort", true);
+            while ($subpage = $db->fetchByAssoc($subpages)) {
+              $items2[] = 
+                Array('URL' => "index.php?module=Pages&action=EditView&record={$subpage['id']}&return_module=Pages&return_action=index", 'LABEL' => $subpage['name']);
+            }
             $pages_menu[$page['page_group']][] = 
-              Array('URL' => "index.php?module=Pages&action=EditView&record={$page['id']}&return_module=Pages&return_action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => []);
+              Array('URL' => "index.php?module=Pages&action=EditView&record={$page['id']}&return_module=Pages&return_action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => $items2);
           }
         }
         $ss->assign("pagesMenu",$pages_menu);
