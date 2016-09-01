@@ -97,7 +97,7 @@
 [leader_pages_data]
     path = packages/leader_pages_data
     id = leader_pages_data
-    version = 1.8.0
+    version = 1.8.1
 
 [webservice_lk]
     path = packages/webservice_lk
