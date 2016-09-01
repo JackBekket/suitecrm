@@ -112,7 +112,7 @@
 [leader_roles]
     path = packages/leader_roles
     id = leader_roles
-    version = 1.7.0
+    version = 1.8.0
 
 [leader_users]
     path = packages/leader_users
