@@ -92,7 +92,7 @@
 [leader_pages]
     path = packages/leader_pages
     id = leader_pages
-    version = 1.5.0
+    version = 1.5.1
 
 [leader_pages_data]
     path = packages/leader_pages_data
@@ -112,7 +112,7 @@
 [leader_roles]
     path = packages/leader_roles
     id = leader_roles
-    version = 1.8.0
+    version = 1.9.0
 
 [leader_users]
     path = packages/leader_users

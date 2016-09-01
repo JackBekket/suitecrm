@@ -681,11 +681,6 @@ class SugarView
                 Array('URL' => "index.php?module=Paid_Services&action=DetailView&record={$cat['id']}&return_module=PaidCategories&return_action=index", 'LABEL' => $cat['name']);
             }
             $pages_menu[$page['page_group']][]=Array('URL' => "index.php?module=Paid_Services&action=ListView", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => $items2);
-            /*
-          } else if ($page['code'] == 'Houses') {
-            $pages_menu[$page['page_group']][] = 
-              Array('URL' => "index.php?module=Houses&action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => []);
-             */
           } else {
             $items2 = [];
             $subpages = $db->query("SELECT id, name, code, url FROM pages WHERE deleted = 0 AND parent_code = '{$page['code']}' ORDER BY sort", true);

@@ -28,6 +28,8 @@ $app_list_strings['page_status_dom'] = array (
     'Shown' => 'Видима',
   );
 
+$app_strings['LBL_TABGROUP_ALL'] = 'Разделы сайта';
+
 
 
 ?>
