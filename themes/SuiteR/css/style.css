@@ -4319,10 +4319,13 @@ div.action_buttons form {
 .actionmenulinks a {
     line-height:1em;
 }
+.actionmenulinks.pages-group  {
+    background-color: gray !important;
+}
 .actionmenulinks.pages-group > a {
     color: white !important;
-    background-color: gray !important;
     text-align: center !important;
+    background-color: gray !important;
 }
 .actionmenulinks.page {
     color: white !important;

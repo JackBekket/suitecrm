@@ -5,6 +5,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 $app_list_strings['moduleList']['Pages'] = 'Страницы';
 $app_list_strings['moduleList']['Paid_Services'] = 'Платные услуги';
+$app_list_strings['moduleList']['Main_Photos'] = 'Фото на главной странице';
+
 $app_list_strings['page_type_dom'] = array (
     '' => '',
     'Article' => 'Статья',

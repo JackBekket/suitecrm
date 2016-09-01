@@ -436,7 +436,8 @@
                                           <div id="pages-{$group}" class="collapse in"> 
                                           {foreach from=$groupItems item=page}
                                             <li class="actionmenulinks page" role="presentation">
-                                              <a href="{$page.URL}">{$page.LABEL}</a>
+                                              <a href="{$page.URL}">{$page.LABEL}
+                                              </a>
                                               {if count($page.ITEMS) > 0}
                                                 &nbsp;&nbsp;<span class="glyphicon glyphicon-expand" data-toggle="collapse" data-target="#pages-{$page.CODE}-items"></span>
                                               {/if}
@@ -452,9 +453,10 @@
                                           </div>
                                          {else}
                                             <li class="actionmenulinks pages-group" role="presentation">
-                                              <a href="{$groupItems.0.URL}">{$groupItems.0.LABEL}</a>
+                                              <a href="{$groupItems.0.URL}">{$groupItems.0.LABEL}
+                                                </a>
                                               {if count($groupItems.0.ITEMS) > 0}
-                                                &nbsp;&nbsp;<span  class="glyphicon glyphicon-expand" data-toggle="collapse" data-target="#pages-{$groupItems.0.CODE}-items" align="right"></span>
+                                                &nbsp;&nbsp;<span  class="glyphicon glyphicon-expand" data-toggle="collapse" data-target="#pages-{$groupItems.0.CODE}-items"></span>
                                               {/if}
                                             </li>
                                             {if count($groupItems.0.ITEMS) > 0}

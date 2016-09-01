@@ -667,7 +667,7 @@ class SugarView
         }
 
         /* HARDSOFT (leader_pages) START */
-        $pages = $db->query("SELECT id, page_group, code, name FROM pages WHERE deleted = 0 AND IFNULL(parent_code, '') = '' ORDER BY sort", true);
+        $pages = $db->query("SELECT id, page_group, code, name, url FROM pages WHERE deleted = 0 AND IFNULL(parent_code, '') = '' ORDER BY sort", true);
 
         $pages_menu = [];
         while($page = $db->fetchByAssoc($pages)) {
@@ -681,18 +681,33 @@ class SugarView
                 Array('URL' => "index.php?module=Paid_Services&action=DetailView&record={$cat['id']}&return_module=PaidCategories&return_action=index", 'LABEL' => $cat['name']);
             }
             $pages_menu[$page['page_group']][]=Array('URL' => "index.php?module=Paid_Services&action=ListView", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => $items2);
+            /*
           } else if ($page['code'] == 'Houses') {
             $pages_menu[$page['page_group']][] = 
               Array('URL' => "index.php?module=Houses&action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => []);
+             */
           } else {
             $items2 = [];
-            $subpages = $db->query("SELECT id, name, code FROM pages WHERE deleted = 0 AND parent_code = '{$page['code']}' ORDER BY sort", true);
+            $subpages = $db->query("SELECT id, name, code, url FROM pages WHERE deleted = 0 AND parent_code = '{$page['code']}' ORDER BY sort", true);
             while ($subpage = $db->fetchByAssoc($subpages)) {
               $items2[] = 
-                Array('URL' => "index.php?module=Pages&action=EditView&record={$subpage['id']}&return_module=Pages&return_action=index", 'LABEL' => $subpage['name']);
+                Array(
+                  'URL' => empty($subpage['url']) ? 
+                    "index.php?module=Pages&action=EditView&record={$subpage['id']}&return_module=Pages&return_action=index" :
+                    $subpage['url'], 
+                  'LABEL' => $subpage['name'],
+                  'CODE' => $subpage['code'], 
+                  );
             }
             $pages_menu[$page['page_group']][] = 
-              Array('URL' => "index.php?module=Pages&action=EditView&record={$page['id']}&return_module=Pages&return_action=index", 'LABEL' => $page['name'], 'CODE' => $page['code'], 'ITEMS' => $items2);
+              Array(
+                'URL' => empty($page['url']) ?
+                  "index.php?module=Pages&action=EditView&record={$page['id']}&return_module=Pages&return_action=index" :
+                  $page['url'], 
+                'LABEL' => $page['name'], 
+                'CODE' => $page['code'], 
+                'ITEMS' => $items2
+              );
           }
         }
         $ss->assign("pagesMenu",$pages_menu);
