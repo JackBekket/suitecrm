@@ -5,8 +5,27 @@ array (
   array (
     'basic_search' => 
     array (
-      0 => 'document_name',
-      1 => array ('name' => 'favorites_only','label' => 'LBL_FAVORITES_FILTER','type' => 'bool',),
+      'document_name' => 
+      array (
+        'name' => 'document_name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'template_type' => 
+      array (
+        'type' => 'enum',
+        'label' => 'LBL_TEMPLATE_TYPE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'template_type',
+      ),
+      'category_id' => 
+      array (
+        'name' => 'category_id',
+        'default' => true,
+        'width' => '10%',
+      ),
+//      1 => array ('name' => 'favorites_only','label' => 'LBL_FAVORITES_FILTER','type' => 'bool',),
     ),
     'advanced_search' => 
     array (
